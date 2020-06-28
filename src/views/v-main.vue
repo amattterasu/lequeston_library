@@ -1,6 +1,5 @@
 <template>
-    <div class="v-main">  
-      <Navbar />
+    <div class="container">  
       <vFilter />
       <Sorting />
       <BookList />
@@ -8,35 +7,28 @@
 </template>
 
 <script>
-import Navbar from '../components/Navbar'
 import vFilter from '../components/vFilter'
 import Sorting from '../components/Sorting'
 import BookList from '../components/BookList'
 
   export default {
       name: 'vMain',
-      components: {
-        Navbar, 
+      components: { 
         vFilter,
         Sorting,
         BookList
       },
       props: {},
-      data: () => ({
-      }),
+      data: () => ({}),
       computed: {},
       methods: {},
       watch: {},
-      mounted: () => {
-      }
+      mounted: () => {}
   }
 </script>
 
 <style lang="scss">
-  .v-main {
-    max-width: 720px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+  .btn {
+    margin: 0 3px 3px 0;
   }
 </style>
