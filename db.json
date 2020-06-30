@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Е Книга",
+      "info": "Жили были дед да баба",
+      "publisher": "Дом книги",
+      "author": "Кирилл Логачев",
+      "date": { "year": 2005, "month": 5, "day": 2},
+      "rating": 5,
+      "image": "https://cdn1.ozone.ru/multimedia/1037900710.jpg",
+      "favorite": false
+    },
+    {
+      "id": 2,
+      "title": "А Война и мир",
+      "info": "Жили были дед да баба",
+      "publisher": "Вапролдломтиф",
+      "author": "Кирилл Логачев",
+      "date": { "year": 2020, "month": 1, "day": 2  },
+      "rating": 0,
+      "image": "https://cdn1.ozone.ru/multimedia/1037900710.jpg",
+      "favorite": false
+    },
+    {
+      "id": 3,
+      "title": "Б Книга",
+      "info": "Жили были дед да баба",
+      "publisher": "Дом книги",
+      "author": "Автор кпртьб",
+      "date": { "year": 1999, "month": 4, "day": 1 },
+      "rating": 1,
+      "image": "https://cdn1.ozone.ru/multimedia/1037900710.jpg",
+      "favorite": false
+    },
+     {
+      "id": 4,
+      "title": "Г Книга",
+      "info": "Жили были дед да баба",
+      "publisher": "Издательство 3123213",
+      "author": "Кирилл шрпролд",
+      "date": { "year": 2010, "month": 6, "day": 2 },
+      "rating": 20,
+      "image": "https://cdn1.ozone.ru/multimedia/1037900710.jpg",
+      "favorite": false
+    },
+    {
+      "id": 5,
+      "title": "Ф Война и мир",
+      "info": "Жили были дед да баба",
+      "publisher": "Дом книги",
+      "author": "Кирилл Логачев",
+      "date": { "year": 2013, "month": 3, "day": 6 },
+      "rating": 10,
+      "image": "https://cdn1.ozone.ru/multimedia/1037900710.jpg",
+      "favorite": false
+    },
+    {
+      "id": 6,
+      "title": "А Книга",
+      "info": "Жили были дед да баба",
+      "publisher": "Дом книги",
+      "author": "Кирилл Логачев",
+      "date": { "year": 2011, "month": 3, "day": 5 },
+      "rating": 10,
+      "image": "https://cdn1.ozone.ru/multimedia/1037900710.jpg",
+      "favorite": false
+    }
+  ]
+}

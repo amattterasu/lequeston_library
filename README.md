@@ -1,19 +1,8 @@
-# lequestion_library
+# Тестовое задание 
 
-## Project setup
-```
-yarn install
-```
+Для запуска приложения, в директории проекта необходимо ввести:
+1. ### `yarn ` или `npm install` для установки
+2. ### `json-server --watch db.json` для запуска эмуляции работы сервера
+2. ### `yarn serve` или `npm run serve` для старта проекта
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Приложение откроется в режиме разработки на хосте [http://localhost:8080](http://localhost:3000).
