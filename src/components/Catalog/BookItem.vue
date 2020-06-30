@@ -7,7 +7,7 @@
         <p class="card-text">Информация: {{ book.info }}</p>
         <p class="card-text">Издательство: {{ book.publisher }}</p>
         <p class="card-text">Автор: {{ book.author }}</p>
-        <p class="card-text">Дата создания: {{ book.date }}</p>
+        <p class="card-text">Дата создания: {{ `${book.date.day} ${months[book.date.month - 1]} ${book.date.year}` }}</p>
         <p class="card-text">Рейтинг: {{ book.rating }}</p>
         <div class="btn-group">
           <button class="btn btn-secondary" @click="ratingDown" type="button">-</button>
@@ -25,28 +25,32 @@
 </template>
 
 <script>
-  export default {
-    name: 'bookItem',
-    props: {
-      book: {
-        type: Object
-      }
+
+export default {
+  name: 'bookItem',
+  props: {
+    book: {
+      type: Object
     },
-    methods: {
-      addFavorites() {
-        this.$emit('addFavorites', this.book)
-      },
-      deleteFavorites() {
-        this.$emit('deleteFavorites', this.book.id)
-      },
-      ratingUp() {
-        this.$emit('ratingUp', this.book.id)
-      },
-      ratingDown() {
-        this.$emit('ratingDown', this.book.id)
-      }
+    months: {
+      type: Array
+    }
+  },
+  methods: {
+    addFavorites() {
+      this.$emit('addFavorites', this.book)
+    },
+    deleteFavorites() {
+      this.$emit('deleteFavorites', this.book.id)
+    },
+    ratingUp() {
+      this.$emit('ratingUp', this.book.id)
+    },
+    ratingDown() {
+      this.$emit('ratingDown', this.book.id)
     }
   }
+}
 </script>
 
 <style lang="scss">

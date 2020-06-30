@@ -1,30 +1,24 @@
 <template>
     <div class="container">  
-      <vFilter />
+      <Selects />
       <Sorting />
       <BookList />
     </div>
 </template>
 
 <script>
-import vFilter from '../components/vFilter'
+import Selects from '../components/Filtration/Selects'
 import Sorting from '../components/Sorting'
-import BookList from '../components/BookList'
+import BookList from '../components/Catalog/BookList'
 
-  export default {
-      name: 'vMain',
-      components: { 
-        vFilter,
-        Sorting,
-        BookList
-      },
-      props: {},
-      data: () => ({}),
-      computed: {},
-      methods: {},
-      watch: {},
-      mounted: () => {}
+export default {
+  name: 'vMain',
+  components: { 
+    Selects,
+    Sorting,
+    BookList
   }
+}
 </script>
 
 <style lang="scss">
